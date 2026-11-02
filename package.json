@@ -1,0 +1,20 @@
+{
+  "name": "ecommerce-product-listing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack e-commerce product listing website - Part 1",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "db:init": "node backend/init-db.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

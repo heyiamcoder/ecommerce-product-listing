@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse quality products at ShopEase." />
+  <title>ShopEase | Product Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="ShopEase home"><span class="brand-mark">S</span> ShopEase</a>
+    <nav><a class="nav-active" href="#products">Shop</a><a href="#about">About</a></nav>
+    <span class="top-note">Thoughtful finds. Everyday prices.</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE EVERYDAY EDIT</p>
+        <h1>Find your next<br><span>favourite thing.</span></h1>
+        <p class="hero-sub">A considered collection of essentials for work, play and everything in between.</p>
+        <a class="hero-link" href="#products">Explore products <span>↗</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="hero-orbit"></div>
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000" alt="Featured sneakers" />
+        <div class="hero-tag"><strong>New season</strong><small>Made for every day</small></div>
+      </div>
+    </section>
+
+    <section class="catalog" id="products">
+      <div class="section-heading">
+        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Popular right now</h2><p class="muted">Browse the collection and find something you love.</p></div>
+        <span class="product-count" id="product-count">Loading products…</span>
+      </div>
+      <div class="toolbar">
+        <label class="search-wrap"><span>⌕</span><input id="search-input" type="search" placeholder="Search products…" maxlength="100" /></label>
+        <select id="category-filter" aria-label="Filter by category">
+          <option value="All">All categories</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Accessories">Accessories</option>
+          <option value="Footwear">Footwear</option>
+          <option value="Home">Home</option>
+        </select>
+      </div>
+      <div id="message" class="message" role="status"></div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="about" id="about"><div><p class="eyebrow">SHOP WITH EASE</p><h2>Good things, made simple.</h2></div><p>ShopEase is a demo storefront built to make discovering everyday products simple. Product information is served by our backend and stored in a relational database.</p></section>
+  </main>
+
+  <div class="modal-backdrop hidden" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close details">×</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+  <footer><span class="brand"><span class="brand-mark">S</span> ShopEase</span><span>© 2026 ShopEase · Full-stack lab project</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

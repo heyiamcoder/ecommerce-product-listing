@@ -1,0 +1,4 @@
+node_modules/
+database/ecommerce.db
+.env
+.DS_Store
